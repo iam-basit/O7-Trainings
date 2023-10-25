@@ -1,0 +1,85 @@
+<!-- forms in html -->
+
+<!--  review get and post metheds -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Forms in HTML</title>
+	</head>
+	
+	<body>
+		<form style="text-align:center; font-size:30px">
+		
+		<label>Name:</label>
+			<input name="username" type="text" placeholder="Enter your full name"/>
+			<br>
+			
+			<label>Username</label>
+			<input name="username" type="text" placeholder="Enter your email"/>
+			<br>
+			
+			<label>Email</label>
+			<input name="email" type="email" required />
+			<br>
+			
+			<label>Password</label>
+			<input name="password" type="password"/>
+			<br>
+			
+			<label>Contact</label>
+			<input name="contact" type="number"/>
+			<br>
+			
+			<label>Time</label>
+			<input name="time" type="time"/>
+			<br>
+			
+			<label>Date</label>
+			<input name="date" type="date"/>
+			<br>
+			
+			<label>Month</label>
+			<input name="month" type="month"/>
+			<br>
+			
+			<label>Image</label>
+			<input name="image" type="file"/>
+			<br>
+			
+			<label>Address</label>
+			<textarea rows="15" cols="25"></textarea>
+			<br>
+			
+			
+			<label>Location</label>
+			<select> 
+				<option selected disabled> select your location</option>
+				<option>Kabul</option>
+				<option>Mazer</option>
+				<option>Herat</option>
+				<option>Hellmand</option>
+			</select>
+			<br>
+			
+			<label>City</label>
+			<input list="city"/>
+			<datalist id="city" placeholder="Select your City"> 
+				<option>Kabul</option>
+				<option>Balkh</option>
+				<option>Mazendaran</option>
+				<option>Hellmand-City</option>
+			</datalist>
+			<br>
+			
+			<label>Gender</label>
+			<input name="male" type="radio" value="male"/> Male
+			<input name="female" type="radio" value="famale"/> Female
+			<br>
+			
+			
+			
+		</form>
+	</body>
+</html>
+
