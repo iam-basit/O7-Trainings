@@ -1,35 +1,85 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif; 
+    box-sizing: border-box;
+    color: white;
 }
+/* .main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 .bg-image{
 display: flex;
 justify-content: center;
 align-items: center;
-height: 710px;
+height: 650px;
 width: 100%;
 }
 
 .nav{
     /* position: absolute; */
-    height: 50px;
+    height: 60px;
     width:100% ;
     background-color:rgb(40,60,72);
-
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .nav-font{
     color: white;
     font-size: 20px;
-    padding: 10px 0 10px 10px;
-    padding-left: 10%;
+    left: 200px;
+    padding: 15px;
+    padding-left: 9%;
 }
 .in-span{
+    position: absolute;
+    float: left;
+    height: 30px;
+    left: 236px;
     background-color:rgb(2,114,176);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-sizing: border-box;
-    height: 10px;
-    
+    border-radius: 2px;
+    padding:1px; 
+}
+a{
+    text-decoration: none;
+
+}
+.sign-in{
+    top: 20px;
+    right:250px ;
+    position: absolute;
+}
+.btn{
+    top: 15px;
+    right:145px ;
+    position: absolute;
+    border: 1px solid white;
+    padding: 5px;
+}
+.login-form{
+    position:absolute;
+    top: 35%;
+    left: 36%;
+    float: right;
+    height: 300px;
+    width: 450px;
+    font-size: 50px;
+    background-color:rgba(0,255,255, .3);
+  
+}
+.linkedin-h2{
+    color: black;
+    top: 40%;
+    left: 36%;
+}
+.form-text{
+    height: 30px;
+    background-color:rgb(2,114,176);
+    border-radius: 2px;
+    text-align: center;
+   
+   
 }
