@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg-image{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 710px;
+width: 100%;
+}
+
+.nav{
+    /* position: absolute; */
+    height: 50px;
+    width:100% ;
+    background-color:rgb(40,60,72);
+
+    box-sizing: border-box;
+}
+
+.nav-font{
+    color: white;
+    font-size: 20px;
+    padding: 10px 0 10px 10px;
+    padding-left: 10%;
+}
+.in-span{
+    background-color:rgb(2,114,176);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    height: 10px;
+    
+}
