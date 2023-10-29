@@ -3,28 +3,26 @@
     padding: 0;
     font-family: 'Roboto', sans-serif; 
     box-sizing: border-box;
-    /* color: white; */
 }
-/* .main-container{
+body{
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
 .bg-image{
-display: flex;
-justify-content: center;
-align-items: center;
+position: absolute;
 height: 650px;
 width: 100%;
 }
 
 .nav{
-    /* position: absolute; */
     height: 60px;
     width:100% ;
     background-color:rgb(40,60,72);
-    /* box-sizing: border-box; */
 }
 
 .nav-font{
@@ -43,11 +41,7 @@ width: 100%;
     border-radius: 2px;
     padding:1px; 
 }
-a{
-    text-decoration: none;
-    color: white;
 
-}
 .sign-in{
     top: 20px;
     right:250px ;
@@ -59,9 +53,7 @@ a{
     position: absolute;
     border: 1px solid white;
     padding:5px 10px;
-    border-radius: 3px;
-
-    
+    border-radius: 3px; 
 }
 .login-form{
     position:absolute;
@@ -101,7 +93,7 @@ a{
 }
 .sub{
     display: block;
-    font-size: 10px;
+    font-size: 20px;
     margin-top: 30px;
     margin-left: 5px;
     color: gray;
@@ -127,8 +119,8 @@ a{
     text-align: center;
     padding-top: 3px;
     font-weight:550;
-
 }
+
 ::placeholder{
     color: rgb(171, 169, 169);
     font-size: 15px;
@@ -142,12 +134,50 @@ a{
    font-size: 15px;
     
 }
+
 .forgot-password{
     color:rgb(2,114,176);
 }
+
 .join-now{
     color:rgb(2,114,176);
 }
+
 .not-member{
     color: gray;
+}
+footer{
+    margin-top: auto;
+}
+.footer-span{
+    position:relative ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width:100% ;
+    font-size: 15px;
+
+    background-color:rgb(9, 10, 11);
+
+}
+.h2-footer{
+    display: inline;
+    font-size: 15px;
+    color: white;
+}
+.footer-in-span{
+    position: absolute;
+    height: 16px;
+    margin-left: 1px;
+    color: black;
+    background-color:rgb(255, 255, 255);
+    border-radius: 2px;
+    padding:1px; 
+}
+.footer-links{
+    margin-left: 20px;
+}
+.user-agreement{
+    color: darkgray;
 }
