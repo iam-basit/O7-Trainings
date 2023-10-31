@@ -1,0 +1,35 @@
+.d1{
+    height:100px;
+    width:100px;
+    background-color: aqua;
+    animation-name:demo;
+    animation-duration:3s;
+    animation-delay: 3s;
+    /* animation-fill-mode:both; */
+    /* forwards,backwards,both */
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    /* normal,reverse,alternate-reverse */
+    position: absolute;
+    /* position:relative */
+}
+@keyframes demo {
+    from{
+       top:0px;
+       left:0px;
+       width:100px;
+       background-color: red;
+    }
+    to{
+       top:0px;
+       left:400px;
+       width:200px;
+       background-color: pink;
+    }
+    
+}
+.d2{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}

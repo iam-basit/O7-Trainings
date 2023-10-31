@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.whole-car{
+    height: 400px;
+    width: 800px;
+    background-color: rgb(75, 252, 75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-parts{
+    height: 80px;
+    width: 300px;
+    background-color:rgb(1, 188, 250);
+    border-top-left-radius: 200%;
+    border-top-right-radius:80%;
+
+}
+.middle-parts{
+    height:150px;
+    width:550px;
+    background-color: #fff;
+    border-radius: 20%;
+}
+.light{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background-color:rgb(255, 251, 1);
+    margin-left: 90%;
+    margin-top: 20px;
+    /* I can add grill for the headlights */
+}
+
+.tires{
+
+}
