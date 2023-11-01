@@ -5,7 +5,11 @@
     /* overflow: hidden; */
 }
 body{
-    background-color: rgb(75, 252, 75);
+    /* background-color: rgb(75, 252, 75); */
+    background-image: url("road-2.avif");
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
 
 }
 
@@ -54,32 +58,7 @@ body{
     /* I can add grill for the headlights */
 }
 
-.light-animation{
-    animation: lights 10s infinite;
-}
 
-@keyframes lights {
-    0%   {background-color:yellow;}
-    1%  {background-color:white; }
-    2%  {background-color:yellow; }
-    3%  {background-color:white; }
-    5%  {background-color:yellow; }
-    7%  {background-color:white; }
-    9%  {background-color:yellow; }
-    11%  {background-color:white; }
-    15%  {background-color:yellow; }
-    21%  {background-color:white; }
-    25%  {background-color:yellow; }
-    30%  {background-color:white; }
-    35%  {background-color:yellow; }
-    41%  {background-color:white; }
-    42%  {background-color:yellow; }
-    43%  {background-color:white; }
-    45%  {background-color:yellow; }
-    50%  {background-color:white;}
-    75%  {background-color:yellow; }
-    100% {background-color:yellow;}
-}
 
 .break-light{
     position: absolute;
@@ -147,9 +126,63 @@ body{
 }
 
 
+
+.moveWholeCare{
+    animation: move 10s alternate infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes move {
+    form{
+        bottom: 50px;
+        left: 5vw;
+    }
+    to{
+        bottom: 50px;
+        left: 65vw;
+    }
+    
+}
+
+.light-animation{
+    animation: lights 10s infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes lights {
+    0%   {background-color:yellow;}
+    1%  {background-color:white; }
+    2%  {background-color:yellow; }
+    3%  {background-color:white; }
+    5%  {background-color:yellow; }
+    7%  {background-color:white; }
+    9%  {background-color:yellow; }
+    11%  {background-color:white; }
+    15%  {background-color:yellow; }
+    21%  {background-color:white; }
+    25%  {background-color:yellow; }
+    30%  {background-color:white; }
+    35%  {background-color:yellow; }
+    41%  {background-color:white; }
+    42%  {background-color:yellow; }
+    45%  {background-color:yellow; }
+    50%  {background-color:white;}
+    60%  {background-color:yellow; }
+    65%  {background-color:yellow; }
+    70%  {background-color:white;}
+    75%  {background-color:yellow; }
+    80%  {background-color:yellow; }
+    85%  {background-color:white;}
+    90%  {background-color:yellow; }
+    95%  {background-color:white; }
+    100% {background-color:yellow;}
+}
+
+
 .animation-on-tires{
 
-    animation:tires 10s infinite;
+    animation:tires 10s alternate infinite;
+    animation-timing-function: ease;    
 }
 
 @keyframes tires {
@@ -158,22 +191,6 @@ body{
     }
     to{
         transform: rotate(360deg);
-    }
-    
-}
-
-.moveWholeCare{
-    animation: move 10s infinite;
-}
-
-@keyframes move {
-    form{
-        bottom: 50px;
-        left: 50px;
-    }
-    to{
-        bottom: 50px;
-        left: 950px;
     }
     
 }
