@@ -2,12 +2,20 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body{
+    background-color: rgb(75, 252, 75);
+
 }
 
 .whole-car{
-    height: 100vh;
-    width:100vw;
-    background-color: rgb(75, 252, 75);
+    height: 250px;
+    width:500px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    background-color: rgba(255, 255, 43, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,29 +36,144 @@
     background-color: #fff;
     border-radius: 20%;
 }
-.light{
+.lights{
+    display: flex;
+    width:550px;
+    background-color:rebeccapurple;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+.head-light{
     height: 40px;
     width: 40px;
-    border-radius: 40px;
+    border-radius: 50px;
     background-color:rgb(255, 251, 1);
+    box-shadow: b;
     margin-left: 90%;
     margin-top: 20px;
     /* I can add grill for the headlights */
 }
 
-.lower-parts{
-  flex-direction: row;
+.light-animation{
+    animation: lights 10s infinite;
 }
+
+@keyframes lights {
+    0%   {background-color:yellow;}
+    1%  {background-color:white; }
+    2%  {background-color:yellow; }
+    3%  {background-color:white; }
+    5%  {background-color:yellow; }
+    7%  {background-color:white; }
+    9%  {background-color:yellow; }
+    11%  {background-color:white; }
+    15%  {background-color:yellow; }
+    21%  {background-color:white; }
+    25%  {background-color:yellow; }
+    30%  {background-color:white; }
+    35%  {background-color:yellow; }
+    41%  {background-color:white; }
+    42%  {background-color:yellow; }
+    43%  {background-color:white; }
+    45%  {background-color:yellow; }
+    50%  {background-color:white;}
+    75%  {background-color:yellow; }
+    100% {background-color:yellow;}
+}
+
+.break-light{
+    position: absolute;
+    margin-top: 20px;
+    height: 40px;
+    width: 15px;
+    border-radius: 40px;
+    background-color:rgb(255, 1, 1);
+}
+
+
 
 .tire1{
     height: 100px;
     width: 100px;
     background-color: black;
     border-radius: 50%;
+
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+   
 }
 .tire2{
     height: 100px;
     width: 100px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-circle{
+    background-color: #ffffff;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.lines{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.line-in-tire-1{
+    position: absolute;
+    background-color:rgb(0, 0, 0);
+    height: 70px;
+    width: 8px;
+}
+.line-in-tire-2{
+   position: relative;
+    background-color:rgb(0, 0, 0);
+    height: 70px;
+    width: 8px;
+    transform: rotate(90deg);
+}
+
+
+.animation-on-tires{
+
+    animation:tires 10s infinite;
+}
+
+@keyframes tires {
+    from{
+    transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.moveWholeCare{
+    animation: move 10s infinite;
+}
+
+@keyframes move {
+    form{
+        bottom: 50px;
+        left: 50px;
+    }
+    to{
+        bottom: 50px;
+        left: 950px;
+    }
+    
 }

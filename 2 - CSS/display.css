@@ -1,0 +1,71 @@
+
+.p1{
+    background-color: red;
+    display: none;
+    /* visibility: hidden; */
+}
+.d1{
+    height: 100px;
+    background-color: aqua;
+}
+.h1{
+    background-color: aquamarine;
+    display: inline;
+    /* does not support height width */
+    height:100px;
+    width:50%;
+}
+.h11{
+    background-color: yellow;
+    display: inline-block;
+    /* supports height width */
+    height:100px;
+    width:50%;
+}
+span{
+    background-color: pink;
+    display: block;
+}
+.parent{
+    background-color: black;
+    height:150px;
+    display: flex;
+    /* converts child to inline element but parent remains  */
+    /* display: inline-flex; */
+    /* inline-flex converts parent and child both to inline element */
+    /* flex-direction:row;
+    flex-wrap: wrap; */
+    justify-content: space-around;
+    /* left, right, center, space-between, space-evenly */
+    /* align-items: center; */
+}
+.child{
+    height:100px;
+    width:200px;
+}
+.c1,.g1{
+    background-color: red;
+}
+.c2,.g2{
+    background-color: yellow;
+}
+.c3,.g3{
+    background-color: rgb(47, 255, 0);
+}
+.c4,.g4{
+    background-color: aqua;
+}
+.c5,.g5{
+    background-color: palevioletred;
+}
+.grid-parent{
+    height:200px;
+    background-color: blue;
+    margin-top:20px;
+    display: grid;
+    grid-template-columns: 120px auto auto auto;
+    gap:10px;
+}
+.grid-parent div{
+    height:100px;
+    width:100px;
