@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color:aqua
+        }
+        a:active{
+            color:yellow;
+        }
+        a:visited{
+            color:red;
+        }
+        .d1{
+            background-color: aqua;
+            height: 100px;
+            width:100px;
+        }
+        .d1:hover{
+            background-color: red;
+        }
+        .d2{
+            border:solid 5px red;
+        }
+        .d3{
+            border:solid 5px blue;
+        }
+        p:first-child{
+            color:red;
+        }
+        p:last-child{
+            background-color: red;
+        }
+        p:nth-child(3){
+            color:aqua
+        }
+        p:nth-last-child(2){
+            color:green
+        }
+        input:focus{
+            background-color: red;
+        }
+        input:required{
+            background-color: yellow;
+        }
+        input:disabled{
+            background-color: black;
+        }
+        input:read-only{
+            background-color: aqua;
+        }
+
+        .d12{
+            height:100px;
+            width:100px;
+            background-color: aqua;
+        }
+        .d12:hover{
+            transition-duration: 10s;
+            transition-delay: 3s;
+        
+            background-color: pink;
+            width:150px;
+        }
+</style>
+</head>
+<body>
+    <p>PAra body</p>
+    <a href="pseudo_element123.html">Click to the given link</a>
+    <div class="d12"></div>
+    <div class="d1"></div>
+    <div class="d2">
+        <p>PAra 1</p>
+        <p>PAra 2</p>
+        <p>PAra 3</p>
+        <p>PAra 4</p>
+        <p>PAra 5</p>
+        <p>PAra 6</p>
+    </div>
+    <div class="d3">
+        <p>PAra 1</p>
+        <p>PAra 2</p>
+        <p>PAra 3</p>
+        <p>PAra 4</p>
+        <p>PAra 5</p>
+        <p>PAra 6</p>
+    </div>
+    Disabled<input  disabled/><br>
+    REquired<input required/><br>
+    Focus<input /><br>
+    <input readonly /><br>
+</body>
+</html>

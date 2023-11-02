@@ -52,7 +52,7 @@ body{
     width: 40px;
     border-radius: 50px;
     background-color:rgb(255, 251, 1);
-    box-shadow: b;
+    /* box-shadow: b; */
     margin-left: 90%;
     margin-top: 20px;
     /* I can add grill for the headlights */
@@ -139,48 +139,24 @@ body{
     }
     to{
         bottom: 50px;
-        left: 65vw;
+        left: 72vw;
     }
     
 }
 
 .light-animation{
-    animation: lights 10s infinite;
+    animation: lights 500ms infinite;
     animation-timing-function: ease;
 }
 
 @keyframes lights {
-    0%   {background-color:yellow;}
-    1%  {background-color:white; }
-    2%  {background-color:yellow; }
-    3%  {background-color:white; }
-    5%  {background-color:yellow; }
-    7%  {background-color:white; }
-    9%  {background-color:yellow; }
-    11%  {background-color:white; }
-    15%  {background-color:yellow; }
-    21%  {background-color:white; }
-    25%  {background-color:yellow; }
-    30%  {background-color:white; }
-    35%  {background-color:yellow; }
-    41%  {background-color:white; }
-    42%  {background-color:yellow; }
-    45%  {background-color:yellow; }
-    50%  {background-color:white;}
-    60%  {background-color:yellow; }
-    65%  {background-color:yellow; }
-    70%  {background-color:white;}
-    75%  {background-color:yellow; }
-    80%  {background-color:yellow; }
-    85%  {background-color:white;}
-    90%  {background-color:yellow; }
-    95%  {background-color:white; }
-    100% {background-color:yellow;}
+    from   {background-color:yellow;}
+    to  {background-color:white; }
+
 }
 
 
 .animation-on-tires{
-
     animation:tires 10s alternate infinite;
     animation-timing-function: ease;    
 }
@@ -190,7 +166,7 @@ body{
     transform: rotate(0deg);
     }
     to{
-        transform: rotate(360deg);
+        transform: rotate(3600deg);
     }
     
 }

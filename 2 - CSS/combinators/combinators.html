@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            background-color: aqua;
+        }
+        div>p{
+            color: red;
+        }
+        div+p{
+            color:yellow;
+        }
+        div~p{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <p>para above</p>
+    <div>
+        <p>Para 1 of div</p>
+        <p>Para 2 of div</p>
+        <span>
+            <p>Para 3</p>
+        </span>
+    </div>
+    <!-- <span>I am span</span> -->
+    <p>PAra1 outside div</p>
+    <p>PAra2 outside div</p>
+    <p>PAra3 outside div</p>
+    <p>PAra4 outside div</p>
+</body>
+</html>
