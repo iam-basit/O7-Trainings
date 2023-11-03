@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background-color:lightblue;
+    /* font-family:  alternate-gothic-atf,Impact,Charcoal,sans-serif;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fox-header{
+    height: 130px;
+    width: 100vw;
+    background-color:#fff  ;  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.navbar{
+    height: 100px;
+    width: 100vw;
+    background-color: #0C1227 ;
+}
+
+/* .fox-header:first-child{
+    font-size: 30px;
+} */
+.fox-header h1{
+    font-size: 50px;
+    font-weight: 900;
+    float: left;
+    color: #0C1227;
+    letter-spacing: 1px;
+}
+.fox-header h4{
+    position: absolute;
+    top: 70px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0C1227;
+    text-transform: uppercase;
+}
+
+.inner-div{
+    height: 100px;
+    width: 95vw;
+    margin: auto;
+    top: 60px;
+    background-color: #ab7878;
+}
+.email-portion{
+    margin-left: 40%;
+    text-align: left;
+}
+.email-icon{
+    position: absolute; 
+    margin-top: 30px;
+    font-size: 30px;
+    color: rgb(253, 171, 18);
+}
+.email-text{
+    position: absolute;
+    top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin-left: 60px;
+}
+.your-email{
+    position: absolute;
+    top: 55px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 60px;
+    color: lightgray;
+}
