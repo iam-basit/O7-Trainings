@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JS</title>
+
+</head>
+<body>
+
+    <button ondblclick="dblClickFun()">DblClick</button>
+    <button onclick="onClickFun()">OnClick</button>
+    <h1  id="change">Hi Ma'am</h1>
+    <button onclick="onChangeFun()" ondblclick="dblClickFun()">Change</button>
+
+
+
+    <script>
+        // function dblClickFun(){
+        //     alert("Hi Basit here!");
+        //     console.log("Hi Basit here!");
+        // }
+        function onClickFun(){
+            // alert("Hi Basit here!");
+            console.log("Welcome to Console Log");
+        }
+        function onChangeFun(){
+         document.getElementById("change").innerText = "Hi Basit";
+        }
+
+        function dblClickFun(){
+            document.getElementById("change").innerHTML = "<u>Hi Basit</u>";
+        }
+
+    </script>
+</body>
+</html>
