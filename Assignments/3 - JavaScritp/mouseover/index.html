@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Mouseover Event</title>
+    </head>
+    <body>
+
+        <div class="main-container">
+            <div class="first-row">
+                <div class="img-1">
+                    <img src="img-1.jpg" id="img-1" alt>
+                </div>
+            </div>
+
+            <div class="second-row">
+                <div class="img-2" onmouseover="hover2()" onmouseout="out()">
+                    <img src="img-2.jpg" id="img-2" alt>
+                </div>
+                <div class="img-3" id="img-3" onmouseover="hover3()"
+                    onmouseout="out()">
+                    <img src="img-3.jpg" alt>
+                </div>
+                <div class="img-4" id="img-4" onmouseover="hover4()"
+                    onmouseout="out()">
+                    <img src="img-4.jpg" alt>
+                </div>
+                <div class="img-5" id="img-5" onmouseover="hover5()"
+                    onmouseout="out()">
+                    <img src="img-5.jpg" alt>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

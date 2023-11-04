@@ -1,0 +1,9 @@
+*{
+    margin: 50px;
+}
+.change-color{
+
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}

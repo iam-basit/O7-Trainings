@@ -1,0 +1,26 @@
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+.first-row{
+    width: 100Vw;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-row{
+ 
+    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left:50px */
+}
+.second-row div{
+    margin-left: 50px;
+}
+
+
