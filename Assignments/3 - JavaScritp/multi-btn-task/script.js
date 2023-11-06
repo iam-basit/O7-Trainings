@@ -26,4 +26,8 @@ function btn4() {
 function btn5() {
   var div2 = document.getElementById('div-2')
   div2.style.backgroundImage = "url('persian-cat.jpg')"
+  var input1 = document.getElementById('input-1')
+  var input2 = document.getElementById('input-2')
+  input1.type = 'radio'
+  input2.type = 'checkbox'
 }
