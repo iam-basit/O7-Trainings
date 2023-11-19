@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Billing Task</title>
+    </head>
+    <body>
+        <div id="table">
+
+            <table>
+                <tr>
+                    <td class="items-label">Item 1 </td>
+                    <td><input type="text" id="item-value-1"></td>
+                    <td><button class="btn-price" onclick="pressPrice1()">Add
+                            Price</button></td>
+                    <td id="td-1"></td>
+                </tr>
+                <tr>
+                    <td class="items-label">Item 2 </td>
+                    <td><input type="text" id="item-value-2"></td>
+                    <td><button class="btn-price" onclick="pressPrice2()">Add
+                            Price</button></td>
+                    <td id="td-2"></td>
+                </tr>
+                <tr>
+                    <td class="items-label">Item 3 </td>
+                    <td><input type="text" id="item-value-3"></td>
+                    <td><button class="btn-price" onclick="pressPrice3()">Add
+                            Price</button></td>
+                    <td id="td-3"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="btn-generate" onclick="pressGenerate()">Generate</button>
+                        <button
+                            class="btn-print" onclick="pressPrint()">Print</button></td>
+                </tr>
+            </table>
+        </div>
+        <div id="printArea"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

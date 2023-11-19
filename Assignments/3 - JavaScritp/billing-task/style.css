@@ -1,0 +1,46 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+table{
+    padding-left: 100px;
+    border-spacing: 20px;
+    font-size: 20px;
+}
+.items-label{
+padding-right: 150px;
+}
+input{
+    height: 30px;
+    width: 250px;
+}
+
+button{
+    color: white;
+}
+.btn-price{
+    background-color:  #0d6efd;
+    font-size: 16px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+}
+.btn-generate{
+    font-size: 16px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color:  #dc3545;
+    margin-left: 50px;
+}
+.btn-print{
+    background-color: #198754;
+    font-size: 16px;
+    height: 40px;
+    width: 70px;
+    border: none;
+    border-radius: 10px;
+}

@@ -1,0 +1,37 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    margin-top: 50px;
+  }
+
+  label {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  input {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  #output {
+    margin-top: 20px;
+  }
+
+  .red {
+    background-color: red;
+    color: white;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+   
+  }
+
+  .yellow {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+  }
