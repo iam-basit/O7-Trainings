@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+body{
+    background-color:rgb(239, 159, 74);
+
+}
+/* .main-container{
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+} */
+
+img{
+    display: inline;
+}
+
+.logo-area{
+    background-color: #fff;
+    height: 320px;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    margin: 0%;
+    background-image: url("logo.png");
+    background-color: #fff;
+    height: 300px;
+    width:50vw;
+}
+.horizontal-line{
+    background-color:black;
+    height: 10px;
+    width: 100vw;
+}
+.menu{
+    margin-left: 80px;
+    padding: 20px;
+}
+.images-area{
+    margin-left: 100px;
+}
+.images-area img{
+    height: 250px;
+    width: 400px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.img-center{
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     display: inline;
+}
+.image-text {
+    position: absolute;
+    top: -50px;
+    left: 120px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+  }
+  .img-center:hover .image-text {
+    opacity: 1;
+ 
+
+  }
+  .filters:hover{
+    /* filter: drop-shadow(8px 8px 10px gray); */
+    filter: opacity(70%);
+  }
+ 
