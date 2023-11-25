@@ -24,3 +24,19 @@ console.log(names)
 const firstName = 'Basit'
 const basit = new Array(firstName, 'Malik', 2023 - 1998, surname, 'student')
 console.log(basit)
+
+// Practicing arrays Example age calculator:
+
+const calcAge = function (birthYear) {
+  return 2023 - birthYear
+}
+
+const birthYearDate = new Array(1998, 1997, 1965, 1945)
+console.log(calcAge(birthYearDate[1]))
+
+const showAge = []
+for (i = 0; i < birthYearDate.length; i++) {
+  showAge[i] = calcAge(birthYearDate[i])
+  //   console.log(calcAge(birthYearDate[i]))
+}
+console.log(showAge)
