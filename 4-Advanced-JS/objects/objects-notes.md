@@ -14,3 +14,7 @@ Syntax:
         key:value,
         key:value,
     }
+
+## Object Methods:
+
+Object methods in JavaScript are functions that are stored as properties of an object. These methods can be called on the object to perform specific actions or calculations.
