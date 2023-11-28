@@ -81,8 +81,8 @@ const details = {
 // console.log(details.age) // by dot notation.
 // console.log(details['calcAge'](1990)) // by bracket notation.
 
-console.log(
-  `${details['first' + nameKey]} is ${
-    details.age
-  }-years old student, and he has ${details.drivingLicense()} driving license`,
-)
+// console.log(
+//   `${details['first' + nameKey]} is ${
+//     details.age
+//   }-years old student, and he has ${details.drivingLicense()} driving license`,
+// )
