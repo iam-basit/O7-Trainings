@@ -1,7 +1,47 @@
-function First_component() {
+function FirstComponent() {
+  const styling = {
+    backgroundColor: 'lightblue',
+  }
+  const tableStyles = {
+    // borderCollapse: 'collapse',
+    width: '50%',
+    backgroundColor: 'lightgreen',
+    position: 'absolute',
+    right: '60px',
+    top: '50px',
+  }
+
+  // Define cell styles
+  const cellStyles = {
+    height: '100px',
+    border: '1px solid red',
+    padding: '8px',
+    textAlign: 'left',
+  }
+
   return (
-    <div>
-      <h1>Story about Basit Malik web development journey:</h1>
+    <div style={styling}>
+      <img
+        src="profile-pic.jpg"
+        alt="profile pic"
+        width="600"
+        height="500"
+      ></img>
+      <table style={tableStyles}>
+        <tr>
+          <th style={cellStyles}>Name</th>
+          <th style={cellStyles}>Age</th>
+          <th style={cellStyles}>Date of birth</th>
+          <th style={cellStyles}>Country</th>
+        </tr>
+        <tr>
+          <td style={cellStyles}>Basit Malik</td>
+          <td style={cellStyles}>24</td>
+          <td style={cellStyles}>07/05/1999</td>
+          <td style={cellStyles}>Afghanistan</td>
+        </tr>
+      </table>
+      <h1>Mr. Malik Web development journey:</h1>
       <p>
         Once upon a time in the bustling city of Kabul, there lived a young and
         ambitious soul named Basit Malik. Basit had always been fascinated by
@@ -50,4 +90,4 @@ function First_component() {
     </div>
   )
 }
-export default First_component
+export default FirstComponent
