@@ -1,4 +1,6 @@
-function StudentDetails2() {
+import StudentDetails1 from './student-details'
+
+function StudentDetails2(props) {
   const tableStyles = {
     // borderCollapse: 'collapse',
     width: '100%',
@@ -15,6 +17,7 @@ function StudentDetails2() {
 
   return (
     <div>
+      <h1>This is the Child Component!</h1>
       <table style={tableStyles}>
         <tr>
           <th style={cellStyles}>ID</th>
@@ -23,12 +26,19 @@ function StudentDetails2() {
           <th style={cellStyles}>Duration</th>
         </tr>
         <tr>
-          <td style={cellStyles}>002</td>
-          <td style={cellStyles}>Soliman Mayar</td>
-          <td style={cellStyles}>Full-Stack</td>
-          <td style={cellStyles}>Six Months</td>
+          <td style={cellStyles}>{props.studentID}</td>
+          <td style={cellStyles}>{props.name}</td>
+          <td style={cellStyles}>{props.course}</td>
+          <td style={cellStyles}>{props.duration}</td>
         </tr>
       </table>
+
+      <StudentDetails1
+        studentID="001"
+        name="Basit"
+        course="Full-Stack"
+        duration="6 Months"
+      />
     </div>
   )
 }

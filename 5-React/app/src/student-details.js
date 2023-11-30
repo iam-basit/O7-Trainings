@@ -1,4 +1,4 @@
-function StudentDetails1() {
+function StudentDetails1(props) {
   const tableStyles = {
     // borderCollapse: 'collapse',
     width: '100%',
@@ -14,6 +14,7 @@ function StudentDetails1() {
 
   return (
     <div>
+      <h1>This is the subChild Component!</h1>
       <table style={tableStyles}>
         <tr>
           <th style={cellStyles}>ID</th>
@@ -22,10 +23,10 @@ function StudentDetails1() {
           <th style={cellStyles}>Duration</th>
         </tr>
         <tr>
-          <td style={cellStyles}>001</td>
-          <td style={cellStyles}>Basit Malik</td>
-          <td style={cellStyles}>Full-Stack</td>
-          <td style={cellStyles}>Six Months</td>
+          <td style={cellStyles}>{props.studentID}</td>
+          <td style={cellStyles}>{props.name}</td>
+          <td style={cellStyles}>{props.course}</td>
+          <td style={cellStyles}>{props.duration}</td>
         </tr>
       </table>
     </div>
