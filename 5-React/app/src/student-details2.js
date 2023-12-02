@@ -18,6 +18,7 @@ function StudentDetails2(props) {
   return (
     <div>
       <h1>This is the Child Component!</h1>
+      {/*  
       <table style={tableStyles}>
         <tr>
           <th style={cellStyles}>ID</th>
@@ -30,8 +31,9 @@ function StudentDetails2(props) {
           <td style={cellStyles}>{props.name}</td>
           <td style={cellStyles}>{props.course}</td>
           <td style={cellStyles}>{props.duration}</td>
+          <td style={cellStyles}>{props.duration}</td>
         </tr>
-      </table>
+  </table> */}
 
       <StudentDetails1
         studentID="001"

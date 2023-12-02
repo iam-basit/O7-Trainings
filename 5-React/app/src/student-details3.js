@@ -18,7 +18,7 @@ function StudentDetails3(props) {
   return (
     <div>
       <h1>This is the Parent Component!</h1>
-      <table style={tableStyles}>
+      {/*<table style={tableStyles}>
         <tr>
           <th style={cellStyles}>ID</th>
           <th style={cellStyles}>Name</th>
@@ -30,19 +30,14 @@ function StudentDetails3(props) {
           <td style={cellStyles}>{props.name}</td>
           <td style={cellStyles}>{props.course}</td>
           <td style={cellStyles}>{props.duration}</td>
-          {/*<td style={cellStyles}>003</td>
+       <td style={cellStyles}>003</td>
           <td style={cellStyles}>Amman</td>
           <td style={cellStyles}>Full-Stack</td>
-          <td style={cellStyles}>12 Months</td>*/}
+          <td style={cellStyles}>12 Months</td>
         </tr>
-      </table>
+      </table>*/}
 
-      <StudentDetails2
-        studentID="002"
-        name="Suliman"
-        course="Full-Stack"
-        duration="6 Months"
-      />
+      <StudentDetails2 />
     </div>
   )
 }
