@@ -1,10 +1,19 @@
 import './App.css'
-import StudentDetails3 from './student-details3'
+import CourseDetails from './Courses'
 
 function App() {
   return (
     <div>
-      <StudentDetails3 />
+      <CourseDetails
+        courseName="BCA"
+        duration="3 Years"
+        cost="$770 / Semester"
+      />
+      <CourseDetails
+        courseName="MCA"
+        duration="2 Years"
+        cost="$800 / Semester"
+      />
     </div>
   )
 }
