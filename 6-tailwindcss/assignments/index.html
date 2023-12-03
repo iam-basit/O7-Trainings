@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use the correct version of Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Introduction to Tailwind CSS</title>
 </head>
-<body class="bg-emerald-300">
-    
-    
+<body class="bg-gray-300">
 
-    <div >
-    <h1 class=" sm:rounded-full ps-8 border-8 text-2xl h-14 w-1/2 bg-sky-700 sm:bg-rose-800 lg:bg-amber-500">Hello world</h1>
+    <div class=" h-screen grid grid-rows-5 gap-5 m-5">
+        <div class="bg-green-500  text-3xl">Header</div>
+        <div>
+            <div class="grid grid-cols-4 grid-rows-4 gap-8 text-3xl">
+                <div class="bg-green-500 h-24">Small Box</div>
+                <div class="bg-green-500 ">Small Box</div>
+                <div class="bg-green-500 ">Small Box</div>
+                <div class="bg-green-500  row-span-3">Sidebar</div>
+                <div class="bg-green-500 col-span-3 row-span-2">Main Content</div>
+                <div class="bg-green-500 col-span-4 ">Footer</div>
+            </div>
+        </div>
+     
     </div>
 </body>
 </html>
