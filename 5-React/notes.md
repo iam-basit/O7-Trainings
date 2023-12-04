@@ -101,3 +101,68 @@ JSX allows self-closing tags for elements that do not have children.
  For example:
 
     const element = <img src="logo.png" alt="Logo" />;
+
+### What are Maps():
+
+Map Object
+A Map in JavaScript is a collection of key-value pairs where each key and value can be of any data type. It provides methods to manipulate, iterate, and retrieve elements based on their keys.
+
+1. Creating a Map
+
+You can create a Map using the Map constructor:
+    
+    let myMap = new Map();
+
+2. Adding Key-Value Pairs
+
+You can add key-value pairs to a Map using the set method:
+
+    myMap.set('key1', 'value1');
+    myMap.set('key2', 'value2');
+
+3. Getting Values
+You can retrieve values based on their keys using the get method:
+
+
+    console.log(myMap.get('key1')); // Output: 'value1'
+
+4. Iterating Over a Map
+You can iterate over the keys, values, or entries (both keys and values) using methods like keys, values, and entries:
+
+    for (let key of myMap.keys()) {
+      console.log(key);
+    }
+
+    for (let value of myMap.values()) {
+  console.log(value);
+    }
+
+    for (let [key, value] of myMap.entries()) {
+      console.log(key, value);
+    }
+
+5. Map Size
+You can get the size of a Map using the size property:
+
+
+    console.log(myMap.size); // Output: 2
+    Removing Key-Value Pairs
+
+6. You can delete a key-value pair using the delete method:
+
+
+        myMap.delete('key1');
+
+7. Clearing a Map
+You can remove all key-value pairs from a Map using the clear method:
+
+
+    myMap.clear();
+8. Parameters
+The Map constructor can take an iterable (like an array) containing key-value pairs as its parameter. Each element of the iterable should be an array where the first element is the key and the second element is the value.
+
+    
+    let myMap = new Map([
+      ['key1', 'value1'],
+      ['key2', 'value2']
+    ]);

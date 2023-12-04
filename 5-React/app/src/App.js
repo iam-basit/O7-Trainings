@@ -1,20 +1,25 @@
 import './App.css'
-import CourseDetails from './Courses'
+import React, { Fragment } from 'react'
 
 function App() {
+  var singersList = [
+    { singer: 'A', songName: 'AfG', type: 'Rap' },
+    { singer: 'B', songName: 'AfG2', type: 'Pop' },
+    { singer: 'C', songName: 'AfG3', type: 'Ska' },
+  ]
+  const songNames = singersList.map((singerObj) => singerObj.songName)
+
   return (
-    <div>
-      <CourseDetails
-        courseName="BCA"
-        duration="3 Years"
-        cost="$770 / Semester"
-      />
-      <CourseDetails
-        courseName="MCA"
-        duration="2 Years"
-        cost="$800 / Semester"
-      />
-    </div>
+    <Fragment>
+      <div>
+        Song Names:
+        {songNames.map((songName, index) => (
+          <p key={index}>
+            {index}: {songName}
+          </p>
+        ))}
+      </div>
+    </Fragment>
   )
 }
 
