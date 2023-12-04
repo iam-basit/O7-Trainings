@@ -8,20 +8,16 @@
     <title>Introduction to Tailwind CSS</title>
 </head>
 <body class="bg-gray-300">
-
-    <div class=" h-screen grid grid-rows-5 gap-5 m-5">
-        <div class="bg-green-500  text-3xl">Header</div>
-        <div>
-            <div class="grid grid-cols-4 grid-rows-4 gap-8 text-3xl">
-                <div class="bg-green-500 h-24">Small Box</div>
-                <div class="bg-green-500 ">Small Box</div>
-                <div class="bg-green-500 ">Small Box</div>
-                <div class="bg-green-500  row-span-3">Sidebar</div>
-                <div class="bg-green-500 col-span-3 row-span-2">Main Content</div>
-                <div class="bg-green-500 col-span-4 ">Footer</div>
+    <div class=" h-screen grid grid-flow-row auto-rows-min  grid-cols-1   gap-5 m-5">
+        <div class="bg-green-500 h-32  text-3xl">Header</div>
+            <div class="grid md:grid-cols-4 md:h-64 grid-rows-2 gap-8 text-3xl ">
+                <div class="bg-green-500 sm:col-span-4 md:col-span-1">Small Box</div>
+                <div class="bg-green-500 sm:col-span-4 md:col-span-1">Small Box</div>
+                <div class="bg-green-500 sm:col-span-4 md:col-span-1">Small Box</div>
+                <div class="bg-green-500 sm:col-span-4  md:col-span-1 row-span-2">Sidebar</div>
+                <div class="bg-green-500 sm:col-span-4  md:col-span-3 ">Main Content</div>
             </div>
-        </div>
-     
+        <div class="bg-green-500 h-32">Footer</div>
     </div>
 </body>
 </html>
