@@ -2,23 +2,34 @@ import './App.css'
 import React, { Fragment } from 'react'
 
 function App() {
-  var singersList = [
-    { singer: 'A', songName: 'AfG', type: 'Rap' },
-    { singer: 'B', songName: 'AfG2', type: 'Pop' },
-    { singer: 'C', songName: 'AfG3', type: 'Ska' },
+  // Define cell styles
+  const cellStyles = {
+    border: '1px solid blue',
+    padding: '8px',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  }
+  var books = [
+    { book_name: 'Strangers', author: 'Christine' },
+    {
+      book_name: 'Harry Potter and the Philosopher’s Stone',
+      author: 'J.K.Howling',
+    },
   ]
-  const songNames = singersList.map((singerObj) => singerObj.songName)
+  const bookDetails = books.map((bookObj) => ({
+    book_name: bookObj.book_name,
+    author: bookObj.author,
+  }))
 
   return (
     <Fragment>
-      <div>
-        Song Names:
-        {songNames.map((songName, index) => (
-          <p key={index}>
-            {index}: {songName}
-          </p>
-        ))}
-      </div>
+      {bookDetails.map((book, index) => (
+        <p key={index}>
+          The book is {book.book_name} and the author is {book.author}
+        </p>
+      ))}
     </Fragment>
   )
 }
