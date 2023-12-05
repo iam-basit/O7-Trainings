@@ -18,7 +18,7 @@ function App() {
             // console.log(fun.target.value)
             setName(fun.target.value)
           }}
-        />{' '}
+        />
         <br />
         <label> Firstname </label>
         <input
@@ -28,7 +28,7 @@ function App() {
           onChange={(fun) => {
             setName(fun.target.value)
           }}
-        />{' '}
+        />
         <br />
         <label> Middlename: </label>
         <input
@@ -38,7 +38,7 @@ function App() {
           onChange={(fun) => {
             setName(fun.target.value)
           }}
-        />{' '}
+        />
         <br />
         <label> Lastname: </label>
         <input
