@@ -4,12 +4,27 @@ import { useState } from 'react'
 
 function App() {
   let [name, setName] = useState('')
+  let [firstName, setFirstname] = useState('')
+  let [lastName, setLastname] = useState('')
+  let [phoneNumber, setPhoneNumber] = useState('')
   let [email, setEmail] = useState('')
   let [password, setPassword] = useState('')
 
+  const passData = () => {
+    alert(
+      `Name:${name}, 
+      Firstname: ${firstName}, 
+      Lastname: ${lastName}, 
+      Phone No:${phoneNumber}, 
+      Email: ${email}, 
+      Password: ${password}`,
+    )
+    // alert()
+  }
+
   return (
     <>
-      <form>
+      <form onSubmit={passData}>
         <label>Name: </label>
         <input
           type="text"
@@ -24,19 +39,8 @@ function App() {
         <input
           type="text"
           name="firstname"
-          size="15"
           onChange={(fun) => {
-            setName(fun.target.value)
-          }}
-        />
-        <br />
-        <label> Middlename: </label>
-        <input
-          type="text"
-          name="middlename"
-          size="15"
-          onChange={(fun) => {
-            setName(fun.target.value)
+            setFirstname(fun.target.value)
           }}
         />
         <br />
@@ -44,30 +48,18 @@ function App() {
         <input
           type="text"
           name="lastname"
-          size="15"
           onChange={(fun) => {
-            setName(fun.target.value)
+            setLastname(fun.target.value)
           }}
         />
         <br />
         <label>Phone : </label>
         <input
-          type="text"
-          name="country code"
-          value="+91"
-          size="2"
+          type="phone"
           onChange={(fun) => {
-            setName(fun.target.value)
+            setPhoneNumber(fun.target.value)
           }}
         />
-        <input
-          type="text"
-          name="phone"
-          size="10"
-          onChange={(fun) => {
-            setName(fun.target.value)
-          }}
-        />{' '}
         <br />
         Email:
         <input
@@ -75,9 +67,9 @@ function App() {
           id="email"
           name="email"
           onChange={(fun) => {
-            setName(fun.target.value)
+            setEmail(fun.target.value)
           }}
-        />{' '}
+        />
         <br />
         Password:
         <input
@@ -85,11 +77,11 @@ function App() {
           id="pass"
           name="pass"
           onChange={(fun) => {
-            setName(fun.target.value)
+            setPassword(fun.target.value)
           }}
         />{' '}
         <br />
-        <input type="button" value="Submit" />
+        <input type="submit" />
       </form>
     </>
   )
