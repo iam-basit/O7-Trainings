@@ -1,3 +1,4 @@
+import React from 'react'
 export default function CourseDetails(props) {
   const tableStyles = {
     // borderCollapse: 'collapse',
