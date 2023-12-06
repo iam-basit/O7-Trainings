@@ -1,14 +1,14 @@
+import React from 'react'
 import './App.css'
-import React, { Fragment } from 'react'
-// import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import LoginForm from './login-useNavigate'
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="" element={<loginForm/>}></Route>
+          <Route path="" element={<LoginForm />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,6 +1,8 @@
-export default function loginForm() {
+import { useState } from 'react'
+import React from 'react'
 
-    let [email, setEmail] = useState('')
+export default function LoginForm() {
+  let [email, setEmail] = useState('')
   let [password, setPassword] = useState('')
 
   const passData = () => {
@@ -10,6 +12,7 @@ export default function loginForm() {
       Password:  ${password}
       `,
     )
+  }
   return (
     <>
       <h1>Login form</h1>
