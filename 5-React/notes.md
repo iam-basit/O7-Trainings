@@ -166,11 +166,203 @@ The Map constructor can take an iterable (like an array) containing key-value pa
       ['key1', 'value1'],
       ['key2', 'value2']
     ]);
-
+store 
 
 
 ### What are Forms in react:
-### What are Hooks in react:
-### What is useState():
-### what is useNavigate():
-### what is preventDefault():
+### What are Hooks in react: 
+
+Hooks are functions that enable functional components to manage state and perform side effects
+ 
+### What is useState(): 
+are used to stor date init 
+
+The useState hook is used to declare state variables in functional components. It takes an initial state as an argument and returns an array with two elements: the current state value and a function that allows you to update the state. 
+
+Example: 
+
+    import React, { useState } from 'react';
+
+    function ExampleComponent() {
+    // Declare a state variable named "count" with an initial value of 0
+    const [count, setCount] = useState(0);
+
+    return (
+        <div>
+        <p>Count: {count}</p>
+        <button onClick={() => setCount(count + 1)}>
+            Increment
+        </button>
+        </div>
+    );
+    }
+
+### What is useNavigate():
+
+The useNavigate hook is not a standard React hook; rather, it is typically associated with the React Router library, which is a popular library for handling navigation in React applications. The useNavigate hook is used to programmatically navigate between different pages or routes within a React application.
+
+Here's a brief explanation of how it works with React Router:
+
+    import { useNavigate } from 'react-router-dom';
+
+    function MyComponent() {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        // Use the navigate function to navigate to a specific route
+        navigate('/another-page');
+    };
+
+    return (
+        <div>
+        <p>This is my component</p>
+        <button onClick={handleClick}>Go to Another Page</button>
+        </div>
+    );
+    }
+
+In the example above, when the button is clicked, the handleClick function is called, and it uses the navigate function from the useNavigate hook to navigate to the "/another-page" route. This is a way to trigger navigation in response to user interactions or other events within your React application.
+
+__**Note:**__ The usage might vary slightly based on the version of React Router you are using, so it's always a good idea to refer to the documentation for the specific version you have installed.
+
+### What is preventDefault():
+
+### input types controlled an uncontrolled inputs:
+
+1. Controlled Inputs:
+
+- In a controlled input, the value of the input field is controlled by the React component state (or the state of the framework being used).
+- Changes to the input value are handled by the component's state, and the input field reflects the current state.
+- Controlled inputs are often used in React applications, where the state is used to manage the values of form elements.
+
+Example: 
+
+    import React, { useState } from 'react';
+
+    function ControlledInputExample() {
+    const [inputValue, setInputValue] = useState('');
+
+    const handleChange = (event) => {
+        setInputValue(event.target.value);
+    };
+
+    return (
+        <input
+        type="text"
+        value={inputValue}
+        onChange={handleChange}
+        />
+    );
+    }
+
+
+
+2. Uncontrolled Inputs:
+
+- In an uncontrolled input, the input field's value is not directly controlled by the React component state.
+- Instead of managing the input value through state, the value is allowed to be directly manipulated by the DOM.
+- Uncontrolled inputs are often used when integrating with non-React code or when you want to rely more on the browser's native handling of form elements.
+
+Example (React with Uncontrolled Input):
+
+    function UncontrolledInputExample() {
+    const inputRef = React.useRef();
+
+    const handleClick = () => {
+        alert(`Input value: ${inputRef.current.value}`);
+    };
+
+    return (
+        <div>
+        <input type="text" ref={inputRef} />
+        <button onClick={handleClick}>Get Input Value</button>
+        </div>
+    );
+    }
+
+
+In this example, the input value is obtained directly from the DOM using the inputRef.current.value property.
+
+In summary, the distinction between controlled and uncontrolled inputs is mainly about how the input values are managed and updated in the application, particularly in the context of state management in frameworks like React. Controlled inputs are managed by the state, while uncontrolled inputs are not directly tied to the state and rely more on direct DOM interaction.
+
+
+    
+
+
+## ways where we can import css in react:
+
+1. Inline Styles:
+
+You can apply styles directly to React elements using the style attribute. This approach involves writing styles as JavaScript objects.
+
+Example: 
+
+    const MyComponent = () => {
+    const myStyle = {
+        color: 'blue',
+        fontSize: '16px',
+    };
+
+    return <div style={myStyle}>Hello, World!</div>;
+    };
+
+2. External Stylesheets:
+
+You can create separate CSS files and import them into your React components. This method is common and helps keep your styles organized.
+
+Example: 
+
+    // In your component file
+    import './MyComponent.css';
+
+    const MyComponent = () => {
+    return <div className="my-component">Hello, World!</div>;
+    }
+
+
+    /* MyComponent.css */
+    .my-component {
+    color: blue;
+    font-size: 16px;
+    }
+
+
+3. CSS-in-JS Libraries:
+
+There are libraries like Styled Components, Emotion, and JSS that allow you to write CSS directly in your JavaScript/JSX files. This approach often involves creating styled components with tagged template literals.
+
+Example: 
+
+    import styled from 'styled-components';
+
+    const StyledDiv = styled.div`
+    color: blue;
+    font-size: 16px;
+    `;
+
+    const MyComponent = () => {
+    return <StyledDiv>Hello, World!</StyledDiv>;
+    };
+
+
+4. CSS Modules:
+
+CSS Modules enable local scoping of styles by automatically generating unique class names for each style file. This helps avoid naming conflicts.
+
+    // MyComponent.module.css
+    .myComponent {
+    color: blue;
+    font-size: 16px;
+    }
+
+    // In your component file
+    import styles from './MyComponent.module.css';
+
+    const MyComponent = () => {
+    return <div className={styles.myComponent}>Hello, World!</div>;
+    };
+
+
+5. CSS-in-JS with Framework Integrations:
+
+Some frameworks, like Material-UI or Ant Design, have their own styling systems or provide integrations with popular CSS-in-JS libraries.

@@ -12,7 +12,7 @@ export default function LoginForm() {
     if (email == 'basit@gmail.com' && password == 'basit123') {
       navigation('/courses')
     } else {
-      alert('Invalid Email or Password')
+      alert('Invalid Email or  Password')
     }
   }
   return (
