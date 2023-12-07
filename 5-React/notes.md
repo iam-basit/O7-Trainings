@@ -289,7 +289,7 @@ In summary, the distinction between controlled and uncontrolled inputs is mainly
     
 
 
-## ways where we can import css in react:
+## Ways where we can import css in react:
 
 1. Inline Styles:
 
