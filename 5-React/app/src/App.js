@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
-
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
 function App() {
   return (
     <>
@@ -220,7 +221,7 @@ function App() {
               </div>
               <div className="card-body">
                 <div className="row">
-                  <img src="task4.png" alt="" />
+                  <img src="assets\imgs/task4.png" alt="" />
                 </div>
               </div>
             </div>
@@ -253,7 +254,7 @@ function App() {
                 <div className="row">
                   <div className="col-md-12 mt-4">
                     <img
-                      src="World-Map-PNG-Photos.png"
+                      src="assets\imgs/World-Map-PNG-Photos.png"
                       className="card-image w-100"
                       alt=""
                     />
@@ -264,7 +265,7 @@ function App() {
                     <div className="row mt-2">
                       <div className="offset-md-4 col-md-8">
                         <img
-                          src="line-graph.png"
+                          src="assets\imgs\line-graph.png"
                           className="card-image w-100"
                           alt=""
                         />
@@ -280,7 +281,7 @@ function App() {
                     <div className="row mt-2">
                       <div className="offset-md-4 col-md-8">
                         <img
-                          src="line-graph.png"
+                          src="assets\imgs\line-graph.png"
                           className="card-image w-100"
                           alt=""
                         />
@@ -296,7 +297,7 @@ function App() {
                     <div className="row mt-2">
                       <div className="offset-md-4 col-md-8">
                         <img
-                          src="line-graph.png"
+                          src="assets\imgs\line-graph.png"
                           className="card-image w-100"
                           alt=""
                         />
