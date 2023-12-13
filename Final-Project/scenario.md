@@ -9,16 +9,23 @@
 - header folder 
     - navbar
     - banner
+        - background-video
 - body
     - 
 - footer
     - 
 ## Header
-Navbar: 
+#### Navbar: 
+
+- shop by category: is a button which will on click will provide a dropdown which the following option will be there that when we hover on that particular part it will show a model or a div that has cards and in the cards will be the details of items and if the particular card clicked it will direct to that part of website.
+    - engin
+    - headlights : will have a shadow
+    - interior
 - logo
 - links
 - search-bar
 - contact 
+- dark-mode
 
 ## Banner part:
 1. Car comes and stops form right to left when it's car model is clicked.
@@ -53,11 +60,22 @@ There must be three to four parts added:
     - year
 
 9.Item cards must have options like:
+
+ - on card-hover :
+        - the card flips to backside
+        - shows small pic of item at the top
+        - shows other details as a body of card
  - add to wishlist 
  - maximize 
  - ratting
  - add to card btn
  - price and description
+
+
+
+
+
+10. when the page is loading there should be shown a speedometer which is getting speed.
 
 9.live- demo:
 
