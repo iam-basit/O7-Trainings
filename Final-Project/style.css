@@ -17,6 +17,7 @@
   #content p{
     padding: 1rem;
     margin-left: 0;
+    display: none;
   }
   #content p:hover{
     background: #ececec;

@@ -49,18 +49,17 @@
 
 
     <div class="flex items-center justify-around bg-white h-20 p-3 pt-3">
-                <a href="#" class="bg-rose-600 rounded-full text-white p-2 w-72 text-center"  onclick="shopClicked()">
-                     <i class="fa-solid fa-bars pr-2 pb-1 "></i>
-                     <div id="dropdown-button" class="dropdown"> Shop By Category
-                        <div class="dropdown-content mt-7 w-72 bg-white text-black text-left pl-5 text-xl" id="content">
-                        
-                        <p>Engine & Drivetrain</p>
-                        <p>Headlights & Lighting</p>
-                        <p>Body Parts</p>
-                        <p>Interior Parts</p>
-                        <p>Tire & Wheels</p>
-                            </div>
-                     </div>
+                <a href="#" class="bg-rose-600 rounded-full text-white p-2 w-72 text-center"  >
+                     
+                     <div id="dropdown-button" class="dropdown" onclick="shopClicked()"><i class="fa-solid fa-bars pr-2 pb-1 "></i> Shop By Category </div>
+                        <ul class="dropdown-content mt-7 w-72 bg-white text-black text-left pl-5 text-xl none" id="content">
+                            <li>Engine & Drivetrain</li>
+                            <li>Headlights & Lighting</li>
+                            <li>Body Parts</li>
+                            <li>Interior Parts</li>
+                            <li>Tire & Wheels</li>
+                        </ul>
+                    
                     </a>
            
                     <a href="#" class="text-gray-600 hover:text-rose-600">Home</a>
