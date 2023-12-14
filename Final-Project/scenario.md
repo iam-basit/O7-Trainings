@@ -70,12 +70,9 @@ There must be three to four parts added:
  - ratting
  - add to card btn
  - price and description
-
-
-
-
-
 10. when the page is loading there should be shown a speedometer which is getting speed.
+
+11. For direction there must be Map 
 
 9.live- demo:
 

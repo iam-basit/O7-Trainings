@@ -10,46 +10,73 @@
     <script src="https://cdn.tailwindcss.com"></script>
         <title>MAK</title>
 </head>
-<body class="bg-orange-400 text-xl font-semibold">
 
-    <div class="flex  items-center justify-around bg-white h-32 p-3 pt-12 border-y-8">
-        <div class="  text-4xl ml-1  inline hover:text-6xl ">MAK</div>
+
+<body class="bg-orange-400 text-xl font-semi">
+
+    <div class="flex  items-center justify-around bg-white h-32 border-b-2">
+        <div class=" mb-8 text-4xl ml-1  inline hover:text-6xl ">MAK<sup>logo</sup></div>
           
-            <input type="text" class=" border-2 border-gray-700 rounded-3xl h-12 w-96" >
-            <i class="fa-solid fa-magnifying-glass text-lg text- absolute pl-9 pt-1 -ml-24 border-slate-900 bg-rose-600 rounded-3xl h-11 w-24"></i>
-          
+        <div class="flex  items-center justify-around">
+            <div class=" border-2 border-gray-400 rounded-3xl h-12 w-96">
+                <input type="text" placeholder="Search" class=" border-gray-400 rounded-3xl h-11 w-72 pl-6 text-lg outline-0" >
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass text-lg  text-white pl-8 pt-1  bg-rose-600 rounded-3xl h-9 w-20 "></i>
+                </a>
+             
+            </div>
+        </div>
         
-   
-
-        <div class="flex-none -mt-8 border-box">
-            <a href="#" class="text-xs ml-8 hover:text-rose-600 ">Login here</a>
+        <div class="flex-none mb-8 border-box">
+            <a href="#" class="text-xs text-gray-400 ml-8 hover:text-rose-600">Login here</a>
             <div class="flex items-center">
-                <i class="fa-solid fa-user-plus mr-2 -mt-1 text-3xl text-slate-800 hover:text-rose-600 "></i>                                  
-                <a href="#" class="hover:text-rose-600" >My Account</a>
+                <i class="fa-solid fa-user-plus mr-2  text-3xl text-gray-400 hover:text-rose-600 "></i>                                  
+                <a href="#" class="hover:text-rose-600 " >My Account</a>
             </div>
         </div>
 
-        <div class=" -mt-8 border-box">
-            <a href="#" class=" text-xs ml-8 hover:text-rose-600  ">Shopping Cart</a>
+        <div class="mb-8 border-box">
+            <a href="#" class=" text-xs text-gray-400 ml-8 hover:text-rose-600">
+                Shopping Cart
+            </a>
             <div class="flex items-center">
 
-                <i class="fa-solid fa-cart-plus mr-2 -mt-1 text-3xl text-slate-800 hover:text-rose-600 "></i>
-                <!-- <i class="fa-regular fa-user "></i>                     -->
-                                <a href="#" class="hover:text-rose-600">$0.0</a>
+                <i class="fa-solid fa-cart-plus mr-2  text-3xl text-gray-400 hover:text-rose-600 "></i>
+                 <a href="#" class="hover:text-rose-600">$0.0</a>
             </div>
         </div>
     </div>
 
 
-    <div class="flex items-center justify-around bg-white h-24 p-3 pt-3">
-                <a href="#" class="bg-rose-600 rounded-3xl text-white p-3 mt-3 w-64 text-center">
-                     <i class="fa-solid fa-bars pr-2 text"></i>Shop By Category</a>
+    <div class="flex items-center justify-around bg-white h-20 p-3 pt-3">
+                <a href="#" class="bg-rose-600 rounded-full text-white p-2 w-72 text-center"  onclick="shopClicked()">
+                     <i class="fa-solid fa-bars pr-2 pb-1 "></i>
+                     <div id="dropdown-button" class="dropdown"> Shop By Category
+                        <div class="dropdown-content mt-7 w-72 bg-white text-black text-left pl-5 text-xl" id="content">
+                        
+                        <p>Engine & Drivetrain</p>
+                        <p>Headlights & Lighting</p>
+                        <p>Body Parts</p>
+                        <p>Interior Parts</p>
+                        <p>Tire & Wheels</p>
+                            </div>
+                     </div>
+                    </a>
            
-                    <a href="#" class="text-lg hover:text-rose-600">Home</a>
-                    <a href="#" class="text-lg hover:text-rose-600">Shope</a>
+                    <a href="#" class="text-gray-600 hover:text-rose-600">Home</a>
+                    <a href="#" class="text-lg hover:text-rose-600">Shop</a>
                     <a href="#" class="text-lg hover:text-rose-600">Blog</a>
                     <a href="#" class="text-lg hover:text-rose-600">About Us</a>
                     <a href="#" class="text-lg hover:text-rose-600">Contact Us</a>
     </div>
+
+    <!-- Banner Part Adding background video or Animation -->
+    <div class="">
+
+    </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
